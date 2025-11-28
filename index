@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Welcome to ReGainX.github.io</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 40px;
+      background: #f7f7fa;
+    }
+    h1 {
+      color: #3c4858;
+    }
+    p {
+      color: #66788a;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to ReGainX!</h1>
+  <p>This is your GitHub Pages site. You can edit <code>index.html</code> to customize the homepage.</p>
+  <p>Get started by adding your content here.</p>
+  <div class="footer">
+    &copy; 2025 Ok-ok-ok
+  </div>
+</body>
+</html>
