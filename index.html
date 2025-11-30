@@ -24,6 +24,17 @@
     }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; border-radius: var(--radius); }
+    /* Logo image styling for consistency */
+    .logo-img {
+      height: 40px;
+      width: auto;
+      vertical-align: middle;
+      margin-right: 0.6rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(31,79,130,0.15);
+      background: #fff;
+      display: inline-block;
+    }
     header {
       background: #fff;
       border-bottom: 1px solid rgba(15,23,42,0.08);
@@ -40,7 +51,7 @@
       justify-content: space-between;
       gap: 1rem;
     }
-    .logo { font-weight: 700; font-size: 1.1rem; color: var(--red); }
+    .logo { font-weight: 700; font-size: 1.1rem; color: var(--red); display: flex; align-items: center; }
     nav ul {
       list-style: none;
       padding: 0;
@@ -164,6 +175,16 @@
       border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
+    .footer-logo-img {
+      height: 32px;
+      width: auto;
+      vertical-align: middle;
+      margin-right: 0.4rem;
+      border-radius: 6px;
+      background: #fff;
+      display: inline-block;
+      box-shadow: 0 2px 6px rgba(31,79,130,0.12);
+    }
     footer {
       background: #070b16;
       color: #e5e7eb;
@@ -196,7 +217,10 @@
 <body>
   <header>
     <div class="nav-bar" role="navigation" aria-label="Primary">
-      <div class="logo">ReGainX</div>
+      <div class="logo">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" />
+        ReGainX
+      </div>
       <nav aria-label="Main" role="tablist">
         <ul>
           <li><a href="#home" data-page="home" aria-controls="home" role="tab" aria-current="page">Home</a></li>
@@ -217,8 +241,14 @@
     <!-- Hero -->
     <section id="home" class="hero page active" role="tabpanel" aria-labelledby="hero-title">
       <div>
-        <p style="text-transform: uppercase; letter-spacing: .08em; color: var(--blue); font-weight:600;">Adaptive Exoskeleton Technology</p>
-        <h1 id="hero-title">Adaptive Mobility. For Everyone.</h1>
+        <p style="text-transform: uppercase; letter-spacing: .08em; color: var(--blue); font-weight:600;">
+          <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:24px; margin-right:7px; vertical-align:middle;" />
+          Adaptive Exoskeleton Technology
+        </p>
+        <h1 id="hero-title">
+          <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:36px; margin-right:14px; vertical-align:middle;" />
+          Adaptive Mobility. For Everyone.
+        </h1>
         <p>ReGainX delivers affordable, real-time exoskeleton assistance for people with motor impairments, enabling everyday movement, confidence, and independence.</p>
         <div class="hero-actions">
           <a class="cta-btn" href="#newsletter" data-page="newsletter">Join Waitlist</a>
@@ -230,15 +260,21 @@
       </figure>
       <div class="benefits" aria-label="Key benefits">
         <div class="card">
-          <strong>Low-cost & accessible</strong>
+          <strong>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:18px; margin-right:5px; vertical-align:middle;" />
+            Low-cost & accessible</strong>
           <p>Engineered for affordability to reach more mobility-challenged individuals worldwide.</p>
         </div>
         <div class="card">
-          <strong>Adaptive assistance</strong>
+          <strong>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:18px; margin-right:5px; vertical-align:middle;" />
+            Adaptive assistance</strong>
           <p>Real-time sensing and multi-joint support that responds to each movement.</p>
         </div>
         <div class="card">
-          <strong>Daily-use ready</strong>
+          <strong>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:18px; margin-right:5px; vertical-align:middle;" />
+            Daily-use ready</strong>
           <p>Lightweight frame, ergonomic fit, and battery life designed for everyday routines.</p>
         </div>
       </div>
@@ -246,14 +282,20 @@
 
     <!-- About -->
     <section id="about" class="page" role="tabpanel" hidden>
-      <h2 class="section-title">Our Mission</h2>
+      <h2 class="section-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:24px; vertical-align:middle; margin-right:8px;" />
+        Our Mission
+      </h2>
       <div class="split">
         <div>
-          <p>ReGainX was founded to close the mobility gap worldwide. We blend adaptive robotics with everyday practicality to support people with motor impairments, caregivers who assist them, and clinicians seeking better tools.</p>
-          <p>We focus on three promises: inclusive design, affordability, and measurable quality-of-life impact. Our founding story began with family caregivers looking for an alternative to costly clinical devices—today we collaborate with global non-profits, rehab centers, and early adopters to deliver solutions that matter.</p>
+          <p>ReGainX was founded to close the mobility gap worldwide. We blend adaptive robotics with everyday practicality to support people with motor impairments, caregivers who assist them, and cl[...]
+          <p>We focus on three promises: inclusive design, affordability, and measurable quality-of-life impact. Our founding story began with family caregivers looking for an alternative to costly cl[...]
         </div>
         <div class="card">
-          <h3>Who We Serve</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:18px; vertical-align:middle; margin-right:6px;" />
+            Who We Serve
+          </h3>
           <ul>
             <li>Individuals with motor impairments or progressive conditions</li>
             <li>Clinicians, PT/OT professionals, and rehab programs</li>
@@ -265,40 +307,60 @@
 
     <!-- Product -->
     <section id="product" class="page" role="tabpanel" hidden>
-      <h2 class="section-title">Product & How It Works</h2>
+      <h2 class="section-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:22px; vertical-align:middle; margin-right:8px;" />
+        Product & How It Works
+      </h2>
       <div class="split">
         <div>
           <figure class="media-card">
             <img loading="lazy" src="Screenshot 2025-11-22 193042.png" alt="ReGainX companion app interface showing adaptive control dashboard" />
-            <figcaption>Companion app interface keeps caregivers and clinicians in sync.</figcaption>
+            <figcaption><img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:16px; vertical-align:middle; margin-right:6px;" />Companion app interface keeps caregivers and clinicians in sync.</figcaption>
           </figure>
           <p style="margin-top:1.5rem;">Live demonstration (Simulator + real-time elbow exoskeleton):</p>
           <video controls preload="metadata" playsinline poster="Screenshot 2025-11-21 225924.png" aria-label="Simulator vs. real-time elbow exoskeleton demo">
             <source src="Simulator vs. Real-time(Elbow Exo).mp4" type="video/mp4" />
             Your browser does not support the video tag. Download the demonstration to view.
           </video>
-          <figcaption style="font-size:0.85rem;color:#4b5563;margin-top:0.5rem;">Demonstration captured in the ReGainX lab showing simulator guidance translated to a real elbow exoskeleton.</figcaption>
+          <figcaption style="font-size:0.85rem;color:#4b5563;margin-top:0.5rem;">
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:14px; vertical-align:middle; margin-right:4px;" />Demonstration captured in the ReGainX lab showing simulator guidance translated to a real elbow exoskeleton.
+          </figcaption>
         </div>
         <div>
-          <h3>Key features</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:16px; vertical-align:middle; margin-right:6px;" />
+            Key features
+          </h3>
           <ul>
             <li>Multi-joint adaptive actuators with sensor fusion for smoother motion.</li>
             <li>Smart controller that learns gait patterns to provide tailored assistance.</li>
             <li>Lightweight modular frame for dressing independence and easy maintenance.</li>
             <li>Safety redundancies: angle limits, torque limits, energy efficiency.</li>
           </ul>
-          <h3>How it works</h3>
-          <p>ReGainX uses embedded sensors along elbows, hips, knees, or lower back to capture motion intent in real time. Algorithms translate that data into responsive torque support, providing extra strength precisely when it’s needed. Rechargeable batteries last through daily routines, and the system integrates with tele-rehab dashboards for clinicians.</p>
-          <h3>Benefits</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:16px; vertical-align:middle; margin-right:6px;" />
+            How it works
+          </h3>
+          <p>ReGainX uses embedded sensors along elbows, hips, knees, or lower back to capture motion intent in real time. Algorithms translate that data into responsive torque support, providing extr[...]
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:16px; vertical-align:middle; margin-right:6px;" />
+            Benefits
+          </h3>
           <p>Improved endurance, reduced caregiver strain, and faster rehab progress—all within an approachable price point.</p>
           <div class="media-grid" aria-label="Hardware gallery">
             <figure class="media-card">
               <img loading="lazy" src="Screenshot 2025-10-02 215404.png" alt="Lower limb exoskeleton model inside MyoAssist simulator" />
-              <figcaption>Lower-limb configuration visualized in the MyoAssist simulator. <em>Source: MyoAssist simulator</em></figcaption>
+              <figcaption>
+                <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:12px; vertical-align:middle; margin-right:4px;" />
+                Lower-limb configuration visualized in the MyoAssist simulator. <em>Source: MyoAssist simulator</em>
+              </figcaption>
             </figure>
             <figure class="media-card">
               <img loading="lazy" src="Screenshot 2025-11-21 225924.png" alt="Elbow exoskeleton alignment referenced in MyoSuite simulator" />
-              <figcaption>Elbow exoskeleton reference from the MyoSuite simulator. <em>Source: MyoSuite simulator</em></figcaption>
+              <figcaption>
+                <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:12px; vertical-align:middle; margin-right:4px;" />
+                Elbow exoskeleton reference from the MyoSuite simulator. <em>Source: MyoSuite simulator</em>
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -307,10 +369,13 @@
 
     <!-- Software -->
     <section id="software" class="page" role="tabpanel" hidden>
-      <h2 class="section-title">Software & Control Intelligence</h2>
+      <h2 class="section-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:22px; vertical-align:middle; margin-right:8px;" />
+        Software & Control Intelligence
+      </h2>
       <div class="split">
         <div>
-          <p>The ReGainX software stack fuses simulator insights with on-body sensors, enabling fast tuning, digital twins, and clinician dashboards. Our adaptive control engine is validated in simulation before deploying to real hardware, shortening iteration cycles.</p>
+          <p>The ReGainX software stack fuses simulator insights with on-body sensors, enabling fast tuning, digital twins, and clinician dashboards. Our adaptive control engine is validated in simula[...]
           <ul>
             <li>Edge AI models detect intent and micro-adjust torque outputs every 200ms.</li>
             <li>Cloud console lets therapists configure modes, monitor usage, and push updates securely.</li>
@@ -319,37 +384,58 @@
         </div>
         <figure class="media-card">
           <img loading="lazy" src="Screenshot 2025-11-22 193042.png" alt="Software analytics dashboard showing gait metrics and adaptive control parameters" />
-          <figcaption>Software analytics dashboard powering insights across pilots.</figcaption>
+          <figcaption><img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:14px; vertical-align:middle; margin-right:5px;" />Software analytics dashboard powering insights across pilots.</figcaption>
         </figure>
       </div>
     </section>
 
     <!-- Use Cases -->
     <section id="use-cases" class="page" role="tabpanel" hidden>
-      <h2 class="section-title">Who ReGainX Helps</h2>
+      <h2 class="section-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:20px; vertical-align:middle; margin-right:8px;" />
+        Who ReGainX Helps
+      </h2>
       <div class="grid-3">
         <article class="use-case">
-          <h3>Elderly with muscle weakness</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:15px; vertical-align:middle; margin-right:5px;" />
+            Elderly with muscle weakness
+          </h3>
           <p>Gentle lift assistance for standing, walking, and daily chores to keep seniors active longer.</p>
         </article>
         <article class="use-case">
-          <h3>Parkinson’s-affected movement</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:15px; vertical-align:middle; margin-right:5px;" />
+            Parkinson’s-affected movement
+          </h3>
           <p>Smooths gait irregularities with adaptive stride support, reducing fatigue and fall risk.</p>
         </article>
         <article class="use-case">
-          <h3>Age-related mobility decline</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:15px; vertical-align:middle; margin-right:5px;" />
+            Age-related mobility decline
+          </h3>
           <p>Boosts confidence to move independently at home, at work, or out in the community.</p>
         </article>
         <article class="use-case">
-          <h3>Everyday use</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:15px; vertical-align:middle; margin-right:5px;" />
+            Everyday use
+          </h3>
           <p>Helps with repetitive tasks like walking long corridors, lifting light items, or reaching overhead.</p>
         </article>
         <article class="use-case">
-          <h3>Caregiver partnerships</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:15px; vertical-align:middle; margin-right:5px;" />
+            Caregiver partnerships
+          </h3>
           <p>Reduces strain by sharing effort with the exoskeleton, enabling collaborative transfers and exercises.</p>
         </article>
         <article class="use-case">
-          <h3>Clinical rehabilitation</h3>
+          <h3>
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:15px; vertical-align:middle; margin-right:5px;" />
+            Clinical rehabilitation
+          </h3>
           <p>Tracks progress with data for clinicians, supporting therapy goals and telehealth coaching.</p>
         </article>
       </div>
@@ -357,7 +443,10 @@
 
     <!-- Feedback -->
     <section id="feedback" class="page" role="tabpanel" hidden>
-      <h2 class="section-title">Feedback & Pilot Results</h2>
+      <h2 class="section-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:20px; vertical-align:middle; margin-right:7px;" />
+        Feedback & Pilot Results
+      </h2>
       <div class="testimonials">
         <blockquote>
           “Sounds cool!”
@@ -368,14 +457,20 @@
         </blockquote>
         <p>— Executive Director, DAPS (Dallas Area Parkinson's Society)</p>
         <div style="margin-top:1.5rem;">
-          <a class="cta-btn" href="#contact" data-page="contact">Join Pilot Program</a>
+          <a class="cta-btn" href="#contact" data-page="contact">
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:18px; vertical-align:middle; margin-right:5px;" />
+            Join Pilot Program
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Contact / Newsletter -->
     <section id="contact" class="contact-form page" role="tabpanel" hidden>
-      <h2 class="section-title">Contact & Get Involved</h2>
+      <h2 class="section-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:18px; vertical-align:middle; margin-right:7px;" />
+        Contact & Get Involved
+      </h2>
       <div class="split">
         <form aria-label="Contact form">
           <label for="name">Name</label>
@@ -384,18 +479,27 @@
           <input id="email" name="email" type="email" placeholder="you@email.com" required />
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Tell us how we can help" required></textarea>
-          <button class="cta-btn" type="submit">Contact Us</button>
+          <button class="cta-btn" type="submit">
+            <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:16px; vertical-align:middle; margin-right:5px;" />
+            Contact Us
+          </button>
         </form>
         <div>
           <div class="card">
-            <h3>Reach us</h3>
+            <h3>
+              <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:15px; vertical-align:middle; margin-right:6px;" />
+              Reach us
+            </h3>
             <p>Email: <a href="mailto:Rohannb02@gmail.com">Rohannb02@gmail.com</a></p>
             <p>Phone: <a href="tel:+14698949878">469-894-9878</a></p>
             <p>Social: @ReGainX on YouTube</p>
           </div>
           <div class="card" style="margin-top:1rem;">
-            <h3>Accessibility & Compliance</h3>
-            <p>We design exoskeletons with personalized assistance to all users, all severities, all income levels; aiding those with mobility impairments, and providing a solution with caregivers and clinicians.</p>
+            <h3>
+              <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:13px; vertical-align:middle; margin-right:5px;" />
+              Accessibility & Compliance
+            </h3>
+            <p>We design exoskeletons with personalized assistance to all users, all severities, all income levels; aiding those with mobility impairments, and providing a solution with caregivers and[...]
           </div>
         </div>
       </div>
@@ -403,18 +507,27 @@
 
     <!-- Newsletter -->
     <section id="newsletter" class="newsletter page" aria-labelledby="newsletter-title" role="tabpanel" hidden>
-      <h2 id="newsletter-title">Stay in the ReGainX loop</h2>
+      <h2 id="newsletter-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:18px; vertical-align:middle; margin-right:5px;" />
+        Stay in the ReGainX loop
+      </h2>
       <p>Get prototype updates, pilot invitations, and product availability first.</p>
       <form>
         <label class="sr-only" for="newsletter-email">Email</label>
         <input id="newsletter-email" type="email" placeholder="Email address" required aria-label="Email address" />
-        <button class="cta-btn" type="submit">Get Notified</button>
+        <button class="cta-btn" type="submit">
+          <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:13px; vertical-align:middle; margin-right:5px;" />
+          Get Notified
+        </button>
       </form>
     </section>
 
     <!-- FAQ -->
     <section id="faq" class="faq page" role="tabpanel" hidden>
-      <h2 class="section-title">Frequently Asked Questions</h2>
+      <h2 class="section-title">
+        <img src="logo.png" alt="ReGainX logo" class="logo-img" style="height:17px; vertical-align:middle; margin-right:7px;" />
+        Frequently Asked Questions
+      </h2>
       <div class="grid-3">
         <details>
           <summary>Is ReGainX safe for daily use?</summary>
@@ -426,11 +539,11 @@
         </details>
         <details>
           <summary>How much will it cost?</summary>
-          <p>Final pricing will be announced ahead of launch, targeting a fraction of current clinical exoskeletons with financing options. Currenlty Elbow exoskeleton is nearing $130, while lower-limb exoskeletons are in development</p>
+          <p>Final pricing will be announced ahead of launch, targeting a fraction of current clinical exoskeletons with financing options. Currenlty Elbow exoskeleton is nearing $130, while lower-lim[...]
         </details>
         <details>
           <summary>What about sizing?</summary>
-          <p>Modular frames and straps adjust for a wide range of body types, and fittings can be done at home or in clinics. The exoskeleton is designed to be used by anyone, regardless of age, gender, or body type.</p>
+          <p>Modular frames and straps adjust for a wide range of body types, and fittings can be done at home or in clinics. The exoskeleton is designed to be used by anyone, regardless of age, gende[...]
         </details>
         <details>
           <summary>Do I need training?</summary>
@@ -459,12 +572,18 @@
   <footer>
     <div class="footer-inner">
       <div>
-        <strong style="color: var(--red); font-size:1.1rem;">ReGainX</strong>
+        <strong style="color: var(--red); font-size:1.1rem;">
+          <img src="logo.png" alt="ReGainX logo" class="footer-logo-img" />
+          ReGainX
+        </strong>
         <p>© <span id="year"></span> ReGainX. All rights reserved.</p>
       </div>
       <div>
         <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a></p>
-        <p>Follow us: LinkedIn · Instagram · YouTube</p>
+        <p>
+          <img src="logo.png" alt="ReGainX logo" class="footer-logo-img" />
+          Follow us: LinkedIn · Instagram · YouTube
+        </p>
       </div>
       <div>
         <p>Contact: <a href="mailto:Rohannb02@gmail.com">Rohannb02@gmail.com</a></p>
